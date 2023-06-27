@@ -117,6 +117,9 @@ const Todo = () => {
         marginBottom: "80px",
       }}
     >
+      <Typography variant="h4" component="h2" gutterBottom>
+        My Todo List
+      </Typography>
       <Paper elevation={3} sx={{ p: 2 }}>
         <Box
           sx={{
