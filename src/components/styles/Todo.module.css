@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.paper {
+    padding: 16px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.inputContainer {
+    padding: 2px 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.todoInput {
+    margin-left: 8px;
+    flex: 1;
+}
+
+.divider {
+    height: 28px;
+    margin: 0 4px;
+}
+
+.addButton {
+    padding: 10px;
+}
+
+.todoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.todoItemCompleted {
+    background-color: #eaf7ea;
+}
+
+
+.title {
+    flex-grow: 1;
+}
+
+.deleteButton {
+    color: red;
+}

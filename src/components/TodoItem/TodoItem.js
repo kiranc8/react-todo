@@ -3,7 +3,8 @@ import Checkbox from "@mui/material/Checkbox";
 import IconButton from "@mui/material/IconButton";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import RadioButtonUncheckedOutlinedIcon from "@mui/icons-material/RadioButtonUncheckedOutlined";
-import ClearIcon from '@mui/icons-material/Clear';
+import ClearIcon from "@mui/icons-material/Clear";
+import styles from "../styles/Todo.module.css";
 import TextField from "@mui/material/TextField";
 
 const TodoItem = ({
@@ -35,14 +36,9 @@ const TodoItem = ({
 
   return (
     <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        marginBottom: "8px",
-        backgroundColor: todo.completed ? "#eaf7ea" : "#fff",
-        padding: "8px",
-        borderRadius: "4px",
-      }}
+      className={`${styles.todoItem} ${
+        todo.completed ? styles.todoItemCompleted : ""
+      }`}
     >
       <Checkbox
         checked={todo.completed}
@@ -62,12 +58,12 @@ const TodoItem = ({
           }}
         />
       ) : (
-        <div onDoubleClick={handleDoubleClick} style={{ flexGrow: 1 }}>
+        <div onDoubleClick={handleDoubleClick} className={styles.title}>
           {todo.title}
         </div>
       )}
       <IconButton aria-label="delete" onClick={handleDeleteClick}>
-        <ClearIcon style={{ color: "red" }} />
+        <ClearIcon className={styles.deleteButton} />
       </IconButton>
     </div>
   );

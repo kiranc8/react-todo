@@ -7,6 +7,7 @@ import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
 import Divider from "@mui/material/Divider";
 import AddIcon from "@mui/icons-material/Add";
+import styles from "../styles/Todo.module.css";
 import TodoItem from "../TodoItem/TodoItem";
 
 const Todo = () => {
@@ -108,48 +109,25 @@ const Todo = () => {
   };
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        marginTop: "5%",
-        marginBottom: "80px",
-      }}
-    >
+    <div className={styles.container}>
       <Typography variant="h4" component="h2" gutterBottom>
         My Todo List
       </Typography>
-      <Paper elevation={3} sx={{ p: 2 }}>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginBottom: "30px",
-          }}
-        >
-          <Paper
-            component="form"
-            sx={{
-              p: "2px 4px",
-              display: "flex",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
+      <Paper elevation={3} className={styles.paper}>
+        <Box className={styles.formContainer}>
+          <Paper component="form" className={styles.inputContainer}>
             <InputBase
-              sx={{ ml: 2, flex: 1 }}
+              className={styles.todoInput}
               placeholder="Write your Todos here..."
               inputProps={{ "aria-label": "search google maps" }}
               value={newTodo}
               onChange={handleInputChange}
               fullWidth
             />
-            <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+            <Divider className={styles.divider} orientation="vertical" />
             <IconButton
+              className={styles.addButton}
               color="primary"
-              sx={{ p: "10px" }}
               aria-label="directions"
               onClick={handleAddTodo}
             >
