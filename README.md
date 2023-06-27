@@ -15,7 +15,7 @@ https://kiranc8.github.io/react-todo/
 
 ## TECH
 
-Technologies used: HTML, CSS,JavaScript, Reactjs
+Technologies used: HTML, CSS,JavaScript, Reactjs, MUI
 
 ## GETTING STARTED
 
