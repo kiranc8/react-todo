@@ -8,10 +8,10 @@ https://kiranc8.github.io/react-todo/
 
 ## FEATURES
 
-1. Add Task . 
-2. Edit Task .
-3. Delete Task .
-3. View task list .
+1. Fetch and show todo items from the api - https://jsonplaceholder.typicode.com/todos. 
+2. Add a todo item, make a POST call to the above url and save the item in react state. (This will be a dummy request)
+3. Update the item, make a PUT call to the above url. (Again this is a dummy call).
+3. Delete an item, make a DELETE call to the above url. (Again this is a dummy call).
 
 ## TECH
 
@@ -21,3 +21,5 @@ Technologies used: HTML, CSS,JavaScript, Reactjs, MUI
 
 1. ```npm install```
 2. ``` npm start ```
+
+
