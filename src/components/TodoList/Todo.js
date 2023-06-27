@@ -113,7 +113,7 @@ const Todo = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        marginTop: "60px",
+        marginTop: "5%",
         marginBottom: "80px",
       }}
     >
