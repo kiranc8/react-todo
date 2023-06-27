@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import Checkbox from "@mui/material/Checkbox";
 import IconButton from "@mui/material/IconButton";
-import DeleteIcon from "@mui/icons-material/Delete";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import RadioButtonUncheckedOutlinedIcon from "@mui/icons-material/RadioButtonUncheckedOutlined";
+import ClearIcon from '@mui/icons-material/Clear';
 import TextField from "@mui/material/TextField";
 
 const TodoItem = ({
@@ -67,7 +67,7 @@ const TodoItem = ({
         </div>
       )}
       <IconButton aria-label="delete" onClick={handleDeleteClick}>
-        <DeleteIcon style={{ color: "red" }} />
+        <ClearIcon style={{ color: "red" }} />
       </IconButton>
     </div>
   );
